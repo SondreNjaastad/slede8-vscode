@@ -1,0 +1,54 @@
+{
+  "name": "slede8",
+  "displayName": "slede8",
+  "description": "slede8 syntax highlighting and tooltips",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "slede8",
+        "aliases": [
+          "slede8"
+        ],
+        "extensions": [
+          ".s8asm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "slede8",
+        "scopeName": "source.slede8",
+        "path": "./syntaxes/slede8.tmLanguage.json"
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SondreNjaastad/slede8-vscode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SondreNjaastad/slede8-vscode/issues"
+  },
+  "homepage": "https://github.com/SondreNjaastad/slede8-vscode#readme",
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}

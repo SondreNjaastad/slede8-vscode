@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "slede8",
+	"patterns": [
+        {
+            "name": "comment.line.semicolon.slede8",
+            "match": ";.*$"
+        },
+        {
+            "name": "keyword.control.slede8",
+            "match": "\\b(SETT|NOPE|STOPP|OG|ELLER|XELLER|VSKIFT|HSKIFT|PLUSS|MINUS|LIK|ULIK|ME|MEL|SE|SEL|HOPP|BHOPP|FINN|LAST|LAGR|LES|SKRIV|TUR|RETUR)\\b"
+        },
+        {
+            "name": "constant.numeric.hex.slede8",
+            "match": "\\b0x[0-9A-Fa-f]+\\b"
+        },
+        {
+            "name": "variable.other.register.slede8",
+            "match": "\\br[0-9]+\\b"
+        },
+        {
+            "name": "constant.language.label.slede8",
+            "match": "^[0-9a-zA-ZæøåÆØÅ\\-_]+:"
+        },
+        {
+            "name": "storage.type.data.slede8",
+            "match": "^.DATA [x0-9a-fA-F, ]*$"
+        }
+    ],
+	"repository": {
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.semicolon.slede8",
+					"match": ";.*$"
+				}
+			]
+		},
+		"keyword": {
+			"patterns": [
+				{
+					"name": "keyword.control.slede8",
+					"match": "\\b(SETT|NOPE|STOPP|OG|ELLER|XELLER|VSKIFT|HSKIFT|PLUSS|MINUS|LIK|ULIK|ME|MEL|SE|SEL|HOPP|BHOPP|FINN|LAST|LAGR|LES|SKRIV|TUR|RETUR)\\b"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric.hex.slede8",
+					"match": "\\b0x[0-9A-Fa-f]+\\b"
+				}
+			]
+		},
+		"variable": {
+			"patterns": [
+				{
+					"name": "variable.other.register.slede8",
+					"match": "\\br[0-9]+\\b"
+				}
+			]
+		},
+		"label": {
+			"patterns": [
+				{
+					"name": "constant.language.label.slede8",
+					"match": "^[0-9a-zA-ZæøåÆØÅ\\-_]+:"
+				}
+			]
+		},
+		"data": {
+			"patterns": [
+				{
+					"name": "storage.type.data.slede8",
+					"match": "^.DATA [x0-9a-fA-F, ]*$"
+				}
+			]
+		}
+	},
+	"scopeName": "source.slede8"
+}
